@@ -44,7 +44,7 @@ module.exports = {
         }
     },
     createBlog: async(req, res, next) => {
-        console.log(req.body)
+        // console.log(req.body)
         const blog = new Blog({
             userid: uniqid(),
             title: req.body.title,
