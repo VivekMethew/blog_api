@@ -58,7 +58,7 @@ module.exports = {
         await blog.save().then(() => {
             console.log(blog)
             return res.status(201).send({
-                success: false,
+                success: true,
                 message: 'success',
                 blog: blog
             })
