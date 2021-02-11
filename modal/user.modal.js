@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt')
 const Schema = mongoose.Schema
 
 
@@ -65,6 +66,18 @@ const userShema = new Schema({
         default: 1
     }
 })
+
+// hash password before saving to database
+userShema.pre('save', async function(next) {
+    try {
+        const salt = await bcrypt.genSalt(10)
+        const hashPassword = await bcrypt.hash(this.password, salt)
+        this.password = hashPassword
+        next()
+    } catch (error) {
+        next(error);
+    }
+});
 
 const User = mongoose.model('users', userShema)
 

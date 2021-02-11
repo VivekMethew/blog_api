@@ -4,4 +4,4 @@ https://github.com/VivekMethew/blog_api.git
 
 ### This is heroku server hosting api link
 
-https://bloggp.herokuapp.com/
+https://bloggp.herokuapp.com/users
