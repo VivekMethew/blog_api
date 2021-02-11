@@ -1,4 +1,4 @@
-const { User } = require('../modal/users')
+const { User } = require('../modal/user.modal')
 const sharp = require('sharp')
 const createError = require('http-errors')
 const mongoose = require('mongoose')

@@ -3,7 +3,7 @@ GET http://localhost:5000/users
 content-type: application/json
 
 ###
-GET http://localhost:5000/users/60157097c15f452a7c584a19
+GET http://localhost:5000/users/6024b33816227731184cd38a
 content-type: application/json
 
 
@@ -12,10 +12,11 @@ POST  http://localhost:5000/users
 content-type: application/json
 
 {
-    "fname": "preeti",
-    "lname": "pandey",
-    "email": "pp8843512@gmail.com",
-    "phone": "70117309341"
+    "fname": "vivek",
+    "lname": "kumar",
+    "email": "vivekmethew60@gmail.com",
+    "password": "70117309341",
+    "phone":"9718546885"
 }
 
 ### update user
